@@ -5,9 +5,11 @@ import ImagemCapa from '../../../assets/ArteSiteDavi.png'
 
 import { ComunidadeText, Container, CriativaText, ImagemCapaInstrumento, LinhaDivisoria, TextoCultural, WaveContainer, Wrapper } from './styles'
 import Button from '../../../components/Button'
+import WhatsappButton from '../../../components/WhatsappButton'
 
 function GreetingsSection() {
   return (<Container>
+    <WhatsappButton />
     <Wrapper>
     <ComunidadeText>Comunidade</ComunidadeText>
     <WaveContainer>
@@ -22,6 +24,7 @@ function GreetingsSection() {
     <Button />
     </Wrapper>
     <ImagemCapaInstrumento src={ImagemCapa} alt='imagem do instrumentista'/>
+    
   </Container>
   )
 }
