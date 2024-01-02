@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const Container = styled.a`
     position: fixed;
     top: 90%;
-    right: 0;
+    right: 10%;
 `
 
 export const WhatsLogoImage = styled.img`

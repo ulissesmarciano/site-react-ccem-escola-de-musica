@@ -8,6 +8,15 @@ export const Container = styled.div`
     justify-content: space-between;
 
     background-color: #121212;
+
+    @media(min-width: 601px){
+        background-color: transparent;
+    }
+
+    @media(min-width: 1025px){
+        max-width: 1025px;
+        margin: auto;
+    }
 `
 
 export const IconContainer = styled.div`

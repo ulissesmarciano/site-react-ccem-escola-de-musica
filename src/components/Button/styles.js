@@ -1,9 +1,11 @@
 import styled from "styled-components";
 
-export const Container = styled.div`
+export const Container = styled.a`
 
     display: flex;
     align-items: center;
+    color: #FFF;
+    text-decoration: none;
 
     p {
         margin-left: 1rem;
@@ -15,8 +17,15 @@ export const Container = styled.div`
         span{
             margin-left: .6rem;
         }
+
         @media(min-width: 320px){
             font-size: .9rem;
+        }
+
+        @media(min-width: 601px){
+            color: 	#000000;
+            font-size: 1rem;
+
         }
         
     }
@@ -33,5 +42,10 @@ export const Circulo = styled.div`
     @media(min-width: 320px){
             height: 2.6rem;
             width: 2.6rem;
-        }
+    }
+
+    @media(min-width: 601px){
+        height: 3rem;
+        width: 3rem;
+    }
 `
