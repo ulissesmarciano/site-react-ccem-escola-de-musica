@@ -1,0 +1,37 @@
+import styled from "styled-components";
+
+export const Container = styled.div`
+
+    display: flex;
+    align-items: center;
+
+    p {
+        margin-left: 1rem;
+        position: absolute;
+
+        font-size: .8rem;
+        text-transform: uppercase;
+        font-weight: 300;
+        span{
+            margin-left: .6rem;
+        }
+        @media(min-width: 320px){
+            font-size: .9rem;
+        }
+        
+    }
+    
+    //background-color: blue;
+        `
+export const Circulo = styled.div`
+    position: relative;
+
+    height: 2.4rem;
+    width: 2.4rem;
+    background-color: #B38B3755;
+    border-radius: 50px;
+    @media(min-width: 320px){
+            height: 2.6rem;
+            width: 2.6rem;
+        }
+`
