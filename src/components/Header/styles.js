@@ -7,7 +7,7 @@ export const Container = styled.div`
     align-items: center;
     justify-content: space-between;
 
-    background-color: #111;
+    background-color: #121212;
 `
 
 export const IconContainer = styled.div`
@@ -23,5 +23,6 @@ export const SidebarButtonContainer = styled.div`
     width: 2rem;
     height: 2rem;
 
+    
 
 `
