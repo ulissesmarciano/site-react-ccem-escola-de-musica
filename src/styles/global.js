@@ -9,6 +9,8 @@ export default createGlobalStyle`
     }
 
     body {
+        margin: 0 1rem;
+        
         background-color: #FFF;
     }
 
