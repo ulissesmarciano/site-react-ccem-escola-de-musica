@@ -1,8 +1,9 @@
+import HomeScreen from "./pages/HomeScreen/index";
 
 function App() {
   return (
     <div className="App">
-      teste
+      <HomeScreen/>
     </div>
   );
 }
