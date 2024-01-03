@@ -9,8 +9,10 @@ export const Container = styled.div`
     justify-content: space-around;
 
     div {
+        position: relative;
+        z-index: 2;
         height: .1rem;
-        width: 100%;
+        width: 2rem;
 
         background-color: #FFF;
         border: 1px solid #FFF;

@@ -4,10 +4,6 @@ export const Container = styled.div`
     margin-bottom: 5rem;
     padding: .8rem 0 0;
 
-    display: flex;
-    justify-content: space-between;
-    
-
     background-color: #121212;
     border-radius: 0 0 200px 200px;
 
@@ -16,6 +12,7 @@ export const Container = styled.div`
     @media(min-width: 601px) {
 
         display: flex;
+        justify-content: space-between;
         background-color: transparent;
         color: #121212;
     }
@@ -28,8 +25,11 @@ export const Container = styled.div`
 
 export const Wrapper = styled.div`
     padding: 1rem;
-    width: 50%;
+    width: 100%;
 
+    @media(min-width: 601px){
+        width: 50%;
+    }
 `
 
 export const ComunidadeText = styled.p`
@@ -140,12 +140,13 @@ export const TextoCultural = styled.div`
 `
 
 export const ContainerImagemCapaInstrumento = styled.div`
-    max-width: 330px;
-    align-items: end;
+    
 
     @media(min-width: 601px){
         margin-top: -5rem;
         width: 100%;
+        max-width: 330px;
+        align-items: end;
     }
 
 `
@@ -155,10 +156,11 @@ export const ImagemCapaInstrumento = styled.img`
     @media(min-width: 601px){
         margin: 0;
         position: relative;
-        z-index: -1;
+        z-index: 1;
         width: 100%;
     }
 
     @media(min-width: 601px){
+        margin-bottom: 10rem;
     }
 `

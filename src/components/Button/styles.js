@@ -18,10 +18,6 @@ export const Container = styled.a`
             margin-left: .6rem;
         }
 
-        @media(min-width: 320px){
-            font-size: .9rem;
-        }
-
         @media(min-width: 601px){
             color: 	#000000;
             font-size: 1rem;

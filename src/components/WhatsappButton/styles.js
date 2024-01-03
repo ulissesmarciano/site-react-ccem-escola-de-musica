@@ -2,6 +2,7 @@ import styled from "styled-components";
 
 export const Container = styled.a`
     position: fixed;
+    z-index: 2;
     top: 90%;
     right: 10%;
 `

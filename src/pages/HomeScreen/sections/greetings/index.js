@@ -1,11 +1,11 @@
 import React from 'react'
 
-import Waves from '../../../assets/waves.png'
-import ImagemCapa from '../../../assets/ArteSiteDavi.png'
+import Waves from '../../../../assets/waves.png'
+import ImagemCapa from '../../../../assets/ArteSiteDavi.png'
 
 import { ComunidadeText, Container, ContainerImagemCapaInstrumento, CriativaText, ImagemCapaInstrumento, LinhaDivisoria, TextoCultural, WaveContainer, Wrapper } from './styles'
-import Button from '../../../components/Button'
-import WhatsappButton from '../../../components/WhatsappButton'
+import Button from '../../../../components/Button'
+import WhatsappButton from '../../../../components/WhatsappButton'
 
 const LinkWhatsapp = 'https://api.whatsapp.com/send?phone=5519993807111&text=Ol%C3%A1.%20Quero%20conhecer%20a%20escola!'
 
@@ -13,7 +13,7 @@ function GreetingsSection() {
   return (<Container>
     <WhatsappButton />
     <Wrapper>
-        <ComunidadeText>Comunidade</ComunidadeText>
+        <ComunidadeText id='Sobre'>Comunidade</ComunidadeText>
         <WaveContainer>
             <img src={Waves} alt='imagem das ondas sonoras' />
             <p>Musical</p>
