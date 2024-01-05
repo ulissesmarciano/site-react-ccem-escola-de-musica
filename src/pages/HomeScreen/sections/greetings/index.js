@@ -1,9 +1,9 @@
 import React from 'react'
 
-import Waves from '../../../../assets/waves.png'
 import ImagemCapa from '../../../../assets/ArteSiteDavi.png'
+import LogoGreetings from '../../../../assets/LogoGreetings.png'
 
-import { ComunidadeText, Container, ContainerImagemCapaInstrumento, CriativaText, ImagemCapaInstrumento, LinhaDivisoria, TextoCultural, WaveContainer, Wrapper } from './styles'
+import {Container, ContainerImagemCapaInstrumento, GreetingsImageCCEMContainer, ImagemCapaInstrumento, LinhaDivisoria, TextoCultural, Wrapper } from './styles'
 import Button from '../../../../components/Button'
 import WhatsappButton from '../../../../components/WhatsappButton'
 
@@ -13,15 +13,12 @@ function GreetingsSection() {
   return (<Container>
     <WhatsappButton />
     <Wrapper>
-        <ComunidadeText id='Sobre'>Comunidade</ComunidadeText>
-        <WaveContainer>
-            <img src={Waves} alt='imagem das ondas sonoras' />
-            <p>Musical</p>
-        </WaveContainer>
-        <CriativaText>Criativa</CriativaText>
-        <LinhaDivisoria/>
-        <TextoCultural>
-        Imaginamos uma escola de música que receba estudantes de todas as origens e forneça orientação individual para garantir seu bem-estar e prepará-los para florescer em um cenário musical envolvente.
+      <GreetingsImageCCEMContainer>
+        <img src={LogoGreetings} alt='Centro Cultural Escola de Música Imagem'/>
+      </GreetingsImageCCEMContainer>
+        <LinhaDivisoria/> 
+        <TextoCultural id='Sobre'>
+        Somos uma escola de música que recebe estudantes de todas as origens e forneça orientação individual para garantir seu bem-estar e prepará-los para florescer em um cenário musical envolvente.
         </TextoCultural>
         <Button href={LinkWhatsapp} target='blank' />
     </Wrapper>

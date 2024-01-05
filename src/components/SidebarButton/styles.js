@@ -1,12 +1,15 @@
 import styled from "styled-components";
 
-export const Container = styled.div`
+export const Container = styled.button`
     padding: .4rem 0;
     height: 100%;
 
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+
+    background-color: transparent;
+    border: none;
 
     div {
         position: relative;
@@ -18,5 +21,9 @@ export const Container = styled.div`
         border: 1px solid #FFF;
         border-radius: 100px;
 
+    }
+
+    @media (min-width:1025px){
+        display: none;
     }
 `

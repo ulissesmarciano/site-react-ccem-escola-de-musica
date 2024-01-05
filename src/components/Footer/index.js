@@ -1,5 +1,5 @@
 import React from 'react'
-import { Container, MenuSection, SocialSection } from './styles'
+import { ContactSection, Container, MenuSection, SocialSection } from './styles'
 
 import ContactButton from '../ContactButton'
 import FacebookIcon from '../../assets/facebookicon.svg'
@@ -10,15 +10,15 @@ import WhattsappIcon from '../../assets/whatsappicon.svg'
 function Footer({id}) {
   return (
     <Container>
-        <div>
+        <ContactSection>
           <ContactButton />
-          <p>Rua Antonio Cesarino, <br/>567 Centro - Campinas</p>
-        </div>
+          <p>Rua Antonio Cesarino, <br/>560 Centro - Campinas</p>
+        </ContactSection>
           <span/>
         <MenuSection>
-          <a href={id="#Sobre"} target='blank'>Cursos</a>
-          <a href={id="#Sobre"} target='blank'>Galeria</a>
-          <a href={id="#Sobre"} target='blank'>Sobre Nós</a>
+          <a href={id="#Cursos"} >Cursos</a>
+          <a href={id="#Galeria"} >Galeria</a>
+          <a href={id="#Sobre"} >Sobre Nós</a>
         </MenuSection>
         <span/>
         <SocialSection>

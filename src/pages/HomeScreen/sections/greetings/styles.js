@@ -20,8 +20,17 @@ export const Container = styled.div`
     @media(min-width: 1025px){
         max-width: 1025px;
         margin: auto;
+        margin-bottom: 5rem;
     }
 `
+
+export const GreetingsImageCCEMContainer = styled.div`
+    img{
+        height: 10rem;
+    }
+
+    margin: 2rem 0 4rem;
+` 
 
 export const Wrapper = styled.div`
     padding: 1rem;
@@ -32,89 +41,13 @@ export const Wrapper = styled.div`
     }
 `
 
-export const ComunidadeText = styled.p`
-    margin: 0 0 .4rem;
-
-    font-size: 2.2rem;
-    font-weight: 100;
-
-    @media(min-width: 320px){
-            font-size: 2.6rem;
-    }
-    @media(min-width: 601px){
-        font-size: 2rem;
-        font-weight: 300;
-    }
-
-    @media(min-width: 769px){
-        font-size: 3rem;
-    }
-    @media(min-width: 1025px){
-        font-size: 3.4rem;
-    }
-`
-export const WaveContainer = styled.div`
-    margin-bottom:  .4rem;
-
-    display: flex;
-    align-items: center;
-
-    img {
-        height: 2rem;
-    }
-
-    p {
-        margin: 0 .6rem;
-
-        font-size: 2.2rem;
-        font-weight: 800;
-        color: #B38B37;
-
-    }
-
-    @media(min-width: 320px){
-        P{
-            font-size: 2.6rem;
-        }
-
-        img{
-            height: 2.2rem;
-        }
-    }
-
-    @media(min-width: 601px){
-        p {
-            font-size: 3rem;
-
-        }
-    }
-
-    @media(min-width: 1025px){
-        p{
-            font-size: 3.4rem;
-        }
-    }
-    
-`
-export const CriativaText = styled.p`
-    margin-bottom: 2rem;
-
-    font-size: 2.2rem;
-    font-weight: 700;
-    @media(min-width: 320px){
-            font-size: 2.6rem;
-    }
-    @media(min-width: 1025px){
-        font-size: 3.4rem;
-    }
-`
 
 export const LinhaDivisoria = styled.div`
-    margin-bottom: 2rem;
+    margin-bottom: 4rem;
 
     height: 1px;
     width: 100%;
-    border: 1px solid #B38B37;
+    border: 1px solid #FE7000;
 `
 
 export const TextoCultural = styled.div`

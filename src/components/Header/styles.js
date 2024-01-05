@@ -23,7 +23,7 @@ export const IconContainer = styled.div`
 
     display: flex;
     img {
-        height: 4rem;
+        height: 1.2rem;
     }
 
     @media(min-width: 1025px){

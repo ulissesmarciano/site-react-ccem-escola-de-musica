@@ -33,7 +33,7 @@ export const Circulo = styled.div`
 
     height: 2.4rem;
     width: 2.4rem;
-    background-color: #B38B3755;
+    background-color: #FE700085;
     border-radius: 50px;
     @media(min-width: 320px){
             height: 2.6rem;

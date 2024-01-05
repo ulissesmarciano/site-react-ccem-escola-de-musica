@@ -1,9 +1,9 @@
 import React from 'react'
 import { Container } from './styles'
 
-function SideBarButton() {
+function SideBarButton({onClick}) {
   return (<>
-    <Container>
+    <Container onClick={onClick}>
         <div/>
         <div/>
     </Container>
