@@ -18,7 +18,7 @@ function GreetingsSection() {
       </GreetingsImageCCEMContainer>
         <LinhaDivisoria/> 
         <TextoCultural id='Sobre'>
-        Somos uma escola de música que recebe estudantes de todas as origens e forneça orientação individual para garantir seu bem-estar e prepará-los para florescer em um cenário musical envolvente.
+        Somos uma escola de música que acolhe alunos de diversas origens, proporcionando orientação personalizada para garantir seu bem-estar e prepará-los para prosperar em um estimulante cenário musical.
         </TextoCultural>
         <Button href={LinkWhatsapp} target='blank' />
     </Wrapper>
