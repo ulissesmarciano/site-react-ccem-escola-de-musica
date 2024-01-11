@@ -13,7 +13,7 @@ export const Container = styled.div`
   height: 100%;
   width: 100%;
   
-  z-index: 10;
+  z-index: 5;
   
   right: ${props => props.sidebar ? '0' : '100%'};
   animation: showingSidebar .4s;

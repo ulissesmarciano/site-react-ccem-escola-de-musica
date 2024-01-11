@@ -1,9 +1,11 @@
 import React, { useState } from 'react'
-import CCEMIcon from '../../assets/LogoHeader.png';
+import { Link } from 'react-router-dom';
 
 import { Container, IconContainer, MenuContainer, SidebarButtonContainer } from './styles';
 import SideBarButton from '../SidebarButton';
 import SideBar from '../Sidebar';
+
+import CCEMIcon from '../../assets/LogoHeader.png';
 
 function Header({id}) {
 
@@ -17,7 +19,7 @@ function Header({id}) {
       </IconContainer>
       <MenuContainer>
         <a href={id="#Cursos"} >Cursos</a>
-        <a href={id="#Galeria"} >Galeria</a>
+        <Link to={"/gallery/"} >Galeria</Link>
         <a href={id="#Sobre"} >Sobre Nós</a>
       </MenuContainer>
       <SidebarButtonContainer>

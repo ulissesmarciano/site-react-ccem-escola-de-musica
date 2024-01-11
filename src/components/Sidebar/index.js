@@ -1,5 +1,8 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
+
 import { Container, CloseButtonContainer, CloseButton, MenuContainer } from './styles'
+
 import { FiX } from 'react-icons/fi'
 import ContactButton from '../ContactButton'
 
@@ -17,7 +20,7 @@ function SideBar({active}) {
         </CloseButtonContainer>
             <MenuContainer>
                 <a href='#Cursos' onClick={closeSidebar}>Cursos</a>
-                <a href='#Galeria' onClick={closeSidebar}>Galeria</a>
+                <Link to={'/gallery/'} onClick={closeSidebar}>Galeria</Link>
                 <a href='#Sobre' onClick={closeSidebar}>Sobre Nós</a>
                 <ContactButton/>
             </MenuContainer>
