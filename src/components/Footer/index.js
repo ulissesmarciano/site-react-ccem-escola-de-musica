@@ -9,16 +9,16 @@ import WhattsappIcon from '../../assets/whatsappicon.svg'
 
 function Footer({id}) {
   return (
-    <Container>
+    <Container id='contato'>
         <ContactSection>
           <ContactButton />
           <p>Rua Antonio Cesarino, <br/>560 Centro - Campinas</p>
         </ContactSection>
           <span/>
         <MenuSection>
-          <a href={id="#Cursos"} >Cursos</a>
-          <a href={id="#Galeria"} >Galeria</a>
-          <a href={id="#Sobre"} >Sobre Nós</a>
+          <a href={id="#cursos"} >Cursos</a>
+          <a href={id="#galeria"} >Galeria</a>
+          <a href={id="#sobre"} >Sobre Nós</a>
         </MenuSection>
         <span/>
         <SocialSection>
