@@ -6,13 +6,17 @@ export default createGlobalStyle`
         padding: 0;
         box-sizing:  border-box;
         scroll-behavior: smooth;
-        font-family: Roboto;
+        font-family: 'Londrina Solid', sans-serif;
+        list-style: none;
     }
 
     body {
-        margin: 0 1rem;
-        background-color: #121212;
+        background-color: #fdf9ed;
     }
 
-    
+    a {
+        text-decoration: none;
+        color: #000;
+        cursor: pointer;
+    }
 `
