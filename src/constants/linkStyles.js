@@ -29,6 +29,26 @@ export const linkStyles = {
         }
     `,
 
-    sidebarStyleLink: css`
+    greetingButtonLink: css`
+        p {
+            padding: .5rem 2rem;
+            color: #fff;
+            background-color: #350030;
+            border-radius: 5px;
+            
+            font-size: 1.5rem;
+        }
+        
+        p:hover {
+            transition: 0.3s;
+            background-color: #b96646;
+        }
+
+        @media(min-width: 820px){
+            p{
+                padding: 1rem 4rem;
+                font-size: 1.8rem;
+            }
+        }
     `,
 }
