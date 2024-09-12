@@ -16,6 +16,10 @@ export const Container = styled.section`
         justify-content: center;
     }
 
+    .greetings-container .image-container img {
+        height: 18rem;
+    }
+
     .greetings-container .info-container {
         padding: 2rem 1rem;
         gap: 1.2rem;

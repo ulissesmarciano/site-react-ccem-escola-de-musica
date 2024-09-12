@@ -2,14 +2,14 @@ import React from 'react';
 import { Container } from './styles';
 import LinkItem from '../LinkItem';
 
-import MockupImage from '../../assets/images/mockup.png'
+import GreetingsCoverImage from '../../assets/images/greetings-cover-image.png'
 
 const GreetingsSection = ({id}) => {
   return (
     <Container>
       <div className="greetings-container">
         <div className='image-container'>
-          <img src={MockupImage}  alt='Imagem de Ilustração ' />
+          <img src={GreetingsCoverImage}  alt='Imagem de Ilustração ' />
         </div>
         <div className="info-container">
           <h3 className='title'>Centro Cultural <span>Escola de Música</span></h3>
