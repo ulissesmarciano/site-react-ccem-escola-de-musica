@@ -11,7 +11,7 @@ const Header = ({id}) => {
     <Container>
       <div className="header-container">
         <div className="logo-container">
-          <a href='/s '>
+          <a href='/'>
             <h1 className="logo">CCEM</h1>
           </a>
         </div>
