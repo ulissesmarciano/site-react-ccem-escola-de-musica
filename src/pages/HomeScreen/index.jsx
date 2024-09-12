@@ -1,5 +1,4 @@
 import React from 'react';
-import { Container } from './styles';
 
 import Header from '../../components/Header';
 import GreetingsSection from '../../components/GreetingsSection';
@@ -9,11 +8,11 @@ import Footer from '../../components/Footer';
 function HomeScreen() {
   return (<>
     <Header/>
-    <Container>
+    <main>
         <GreetingsSection />
         <CoursesSection />
         <Footer />
-    </Container>  
+    </main>  
   </>);
 };
 
