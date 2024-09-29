@@ -1,10 +1,11 @@
 import styled from "styled-components";
 
-export const Container = styled.div`
+export const Container = styled.section`
     margin: 20rem 1rem 0 1rem;
     
     h3{
         margin: 0 0 .6rem;
+        scroll-margin-top: 100px;
         
         font-size: 1.rem;
         font-weight: 400;

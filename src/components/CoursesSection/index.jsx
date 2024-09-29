@@ -16,7 +16,7 @@ import MusicalPicture from '../../../../assets/teatromusical.png'
 function CoursesSection() {
   return (
     <Container>
-            <h3 id='Cursos'>Conheça</h3>
+            <h3 id='cursos'>Conheça</h3>
             <h4>Nossos Cursos</h4>
         <CourseLeft 
             title='Tecnica Vocal'
