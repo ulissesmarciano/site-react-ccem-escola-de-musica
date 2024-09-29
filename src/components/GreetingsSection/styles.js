@@ -62,6 +62,10 @@ export const Container = styled.section`
 
     @media(min-width: 820px){
         background-size: 550px;
+
+        .greetings-container {
+            height: calc(100vh - 72.38px);
+        }
         
         .greetings-container .image-container img {
             height: 22rem;
@@ -69,16 +73,16 @@ export const Container = styled.section`
 
         .greetings-container .info-container {
             padding-top: 1rem;
-            gap: 3rem;
+            gap: 1rem;
         }
 
         .greetings-container .info-container .title {
-            font-size: 3.2rem;
+            font-size: 2.6rem;
         }
     
         .greetings-container .info-container .text{
-            font-size: 2rem;
-            line-height: 2.8rem;
+            font-size: 1.4rem;
+            line-height: 2rem;
         }
     }
 
