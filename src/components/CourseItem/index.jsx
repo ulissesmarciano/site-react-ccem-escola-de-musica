@@ -1,22 +1,20 @@
-import React from 'react'
+import React from 'react';
 
-import { Container, DescriptionImageContainer } from './styles'
+import { Container } from './styles';
 
 
-const CourseItem = ({title, description, src, alt}) => {
+const CourseItem = ({ title, description, src, alt }) => {
   return (
     <Container>
-            <h3>{title}</h3>
-        <DescriptionImageContainer>
-            <div>
-                <p>{description}</p>
-            </div>
-            <div>
-                <img src={src} alt={alt}/>
-            </div>
-        </DescriptionImageContainer>
+      <div className='course-info-container'>
+        <div>
+          <h3 className='course-title'>{title}</h3>
+          <p className='course-description'>{description}</p>
+        </div>
+        <img className='course-picture' src={src} alt={alt} />
+      </div>
     </Container>
-  )
-}
+  );
+};
 
-export default CourseItem
+export default CourseItem;
