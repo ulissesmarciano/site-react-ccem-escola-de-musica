@@ -1,6 +1,6 @@
 import React from 'react'
 
-import { Container, DescriptionImageContainer } from './imgleft/styles'
+import { Container, DescriptionImageContainer } from './styles'
 
 
 const CourseItem = ({title, description, src, alt}) => {
