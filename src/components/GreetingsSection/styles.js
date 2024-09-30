@@ -5,10 +5,9 @@ import backgroundDesktopImage from "../../assets/images/bg-desktop.svg"
 export const Container = styled.section`
 
     height: calc(100vh - 88.38px);
-
-        background: url(${backgroundMobileImage}) top center no-repeat ;
-        background-size: 350px;
-
+    background: url(${backgroundMobileImage}) top center no-repeat ;
+    background-size: 350px;
+    
     .greetings-container .image-container {
         padding: 4rem 0;
         display: flex;
