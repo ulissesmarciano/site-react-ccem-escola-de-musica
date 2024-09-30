@@ -1,9 +1,8 @@
 import styled from "styled-components";
 
-export const Container = styled.div`
+export const Container = styled.footer`
   
   height: 20rem;
-  margin: 0 -1rem;
   padding: 4rem;
   
 
