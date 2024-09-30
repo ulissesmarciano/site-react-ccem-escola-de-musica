@@ -1,31 +1,31 @@
 import styled from "styled-components";
 
 export const Container = styled.section`
-    margin: 20rem 1rem 0 1rem;
+    padding: 0 1rem;
     
-    h3{
+    .section-title p{
         margin: 0 0 .6rem;
         scroll-margin-top: 100px;
         
-        font-size: 1.rem;
+        font-size: 1.4rem;
         font-weight: 400;
         text-transform: uppercase;
         color: #FE7000;
     }
 
-    h4{
+    .section-title h2 {
         margin: 0 0 4rem;
 
-        font-size: 1.8rem;
+        font-size: 2rem;
         font-weight: 400;
         text-transform: uppercase;
-        color: #121212;
+        color: #350030;
     }
 
     @media (min-width: 601px){
         
         margin: auto;
         padding: 1rem;
-        max-width: 1025px;
+        max-width: 1440px;
     }
 `
