@@ -3,57 +3,51 @@ import styled from "styled-components";
 export const Container = styled.div`
     margin: 0 0 5rem;
 
-    h3{
+    .course-title {
         margin: 0 0 1rem;
-        color: #121212;
 
-        @media (min-width: 769px){
-            margin: 2rem 3rem;
-            max-width: 600px;
-        }
+        color: #350030;
+        font-size: 1.8rem;
+
+    }
+
+    .course-info-container .course-description {
+        margin: 0 0 1.2rem;
+
+        font-family: 'Poppins', sans-serif;
+        font-size: 1.2rem;
+        color: #808080;
+        line-height: 1.6rem;
     }
     
-`
+    .course-info-container .course-picture {
+        width: 100%;
 
-export const DescriptionImageContainer = styled.div`
-    div{
-    
-        p {
-            margin: 0 0 1.2rem;
-    
-            font-size: 1.2rem;
-            color: #808080;
-            line-height: 1.6rem;
+        border-radius: 5px;
 
-            @media (min-width: 769px){
-                font-size: 1.6rem;
-                max-width: 300px;
-                line-height: 2.2rem;
-            }
-        }
-    
-        img{
-            width: 100%;
-    
-            border-radius: 5px;
-            //-webkit-filter: grayscale(100%);
-            //filter: grayscale(100%);
-            //filter: gray;
-
-            @media (min-width: 769px){
-                max-width: 300px;
-            }
-
-        }
-    
-        
     }
 
     @media (min-width: 769px){
-        margin: auto;
-        max-width: 800px;
+        .course-title {
+            margin: 1rem 0;
+            max-width: 600px;
+        }
 
-        display: flex;
-        justify-content: space-around;
+        .course-info-container {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .course-info-container .course-description {
+            font-size: 1.6rem;
+            max-width: 500px;
+            line-height: 2.2rem;
+        }
+
+
+        .course-info-container .course-picture {
+            max-width: 500px;
+        }
+        
     }
-    `
+`
