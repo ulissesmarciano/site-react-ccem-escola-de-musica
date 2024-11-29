@@ -3,15 +3,21 @@ import React from 'react';
 import { Container } from './styles';
 
 
-const CourseItem = ({ title, description, src, alt, variant }) => {
+const CourseItem = ({ title, description, src, alt, variant, hash }) => {
   return (
     <Container $variant={variant}>
       <div className='course-container' >
+
         <div className='course-info-container'>
           <h3 className='course-title'>{title}</h3>
-          <p className='course-description'>{description}</p>
+          <img className='course-picture in-info-container' src={src} alt={alt} />
+          <p className='course-description'>{description}<br/><br/><span>{hash}</span></p>
         </div>
-        <img className='course-picture' src={src} alt={alt} />
+
+        <div className='picture-container'>
+          <img className='course-picture out-info-container' src={src} alt={alt} />
+        </div>
+
       </div>
     </Container>
   );
