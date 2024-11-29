@@ -1,6 +1,7 @@
 import styled from "styled-components";
 
 export const Container = styled.section`
+    margin: 4rem 0;
     padding: 0 1rem;
     
     .section-title p{
