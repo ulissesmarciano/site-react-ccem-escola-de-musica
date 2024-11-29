@@ -28,7 +28,7 @@ export const Container = styled.div`
     }
 
     @media (min-width: 769px){
-        
+        margin: 0 0 8rem;
         .course-container {
             display: flex;
             justify-content: space-between;
