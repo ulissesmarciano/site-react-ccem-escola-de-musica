@@ -24,6 +24,7 @@ const CoursesSection = () => {
                 description='Junte-se a nós nessa jornada incrível para desvendar todos os mistérios escondidos na arte da voz! Descubra todo o potencial e a transformação que o nosso curso de técnica vocal pode trazer para você. 🎤✨'
                 src={VoxPicture}
                 alt='Foto de uma mulher cantando'
+                
             />
             <CourseItem
                 title='Teclado e Piano'
@@ -34,9 +35,10 @@ const CoursesSection = () => {
             />
             <CourseItem
                 title='Teatro Musical'
-                description='Junte-se a nós para explorar o fascinante universo do teatro musical e viver momentos inesquecíveis! Vamos liberar sua voz, elevar sua performance e fazer você brilhar intensamente nos palcos ao nosso lado. 🌟🎭 #VemPraCiaCCEM'
+                description='Junte-se a nós para explorar o fascinante universo do teatro musical e viver momentos inesquecíveis! Vamos liberar sua voz, elevar sua performance e fazer você brilhar intensamente nos palcos ao nosso lado.🌟🎭 '
                 src={MusicalPicture}
                 alt='Foto de um grupo teatral saudando o publico'
+                hash="#VemPraCiaCCEM"
                 />
 
             <CourseItem
@@ -54,16 +56,18 @@ const CoursesSection = () => {
             />
             <CourseItem
                 title='Bateria'
-                description='Desperte todo o seu ritmo com o nosso curso de bateria! Transforme simples batidas em grooves cheios de energia e faça sua música vibrar, marcando presença por onde passar. 🥁✨ #BateriaManda #VemComAGente'
+                description='Desperte todo o seu ritmo com o nosso curso de bateria! Transforme simples batidas em grooves cheios de energia e faça sua música vibrar, marcando presença por onde passar. 🥁✨'
                 src={DrumsPicture}
                 alt='Foto de homem com guitarra'
                 variant="reverse"
+                hash="#BateriaManda #VemComAGente"
             />
             <CourseItem
                 title='Contrabaixo'
-                description='Junte-se a nós para explorar o incrível universo do contrabaixo! Deixe-se levar por esse som poderoso e torne-se parte da equipe que dá vida ao groove com estilo e atitude.🎸🔥 #CursoDeContrabaixo'
+                description='Junte-se a nós para explorar o incrível universo do contrabaixo! Deixe-se levar por esse som poderoso e torne-se parte da equipe que dá vida ao groove com estilo e atitude.🎸🔥'
                 src={BassPicture}
                 alt='Foto de homem com guitarra'
+                hash="#CursoDeContrabaixo"
             />
         </Container>
     );
