@@ -11,7 +11,7 @@ export const Container = styled.section`
         font-size: 1.4rem;
         font-weight: 400;
         text-transform: uppercase;
-        color: #FE7000;
+        color: #b96646;
     }
 
     .section-title h2 {
@@ -28,5 +28,14 @@ export const Container = styled.section`
         margin: auto;
         padding: 1rem;
         max-width: 1440px;
+
+        .section-title p {
+            font-size: 2.2rem;
+        }
+
+        .section-title h2 {
+            font-size: 3.5rem;
+        }
+
     }
 `
