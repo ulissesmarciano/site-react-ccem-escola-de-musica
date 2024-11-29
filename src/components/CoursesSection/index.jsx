@@ -21,44 +21,47 @@ const CoursesSection = () => {
             </div>
             <CourseItem
                 title='Tecnica Vocal'
-                description='Vem com a gente desvendar os segredos da voz! Descubra o poder do nosso curso de técnica vocal. 🎤✨'
+                description='Junte-se a nós nessa jornada incrível para desvendar todos os mistérios escondidos na arte da voz! Descubra todo o potencial e a transformação que o nosso curso de técnica vocal pode trazer para você. 🎤✨'
                 src={VoxPicture}
                 alt='Foto de uma mulher cantando'
             />
             <CourseItem
                 title='Teclado e Piano'
-                description='Desperte o pianista que há em você! Vem pro nosso curso de teclado e solte o som das suas notas favoritas. 🎹✨'
+                description='Desperte o pianista adormecido dentro de você e dê vida às suas melodias! Venha para o nosso curso de teclado e liberte todo o som das suas notas mais queridas e emocionantes. 🎹✨'
                 src={PianoPicture}
                 alt='Foto de uma mulher tocando teclado'
+                variant="reverse"
             />
             <CourseItem
                 title='Teatro Musical'
-                description='Vem com a gente desbravar o mundo do teatro musical! Bora soltar a voz e brilhar nos palcos juntos. 🌟🎭 #VemPraCiaCCEM'
+                description='Junte-se a nós para explorar o fascinante universo do teatro musical e viver momentos inesquecíveis! Vamos liberar sua voz, elevar sua performance e fazer você brilhar intensamente nos palcos ao nosso lado. 🌟🎭 #VemPraCiaCCEM'
                 src={MusicalPicture}
                 alt='Foto de um grupo teatral saudando o publico'
-            />
+                />
 
             <CourseItem
                 title='Violão'
-                description='Desbrave acordes, conquiste sonhos! Nosso curso de violão é o caminho descontraído para sua jornada musical. 🎸✨'
+                description='Explore os acordes, alcance seus maiores sonhos e transforme sua paixão pela música em realidade! Nosso curso de violão é o jeito leve e divertido de embarcar na sua jornada musical com confiança. 🎸✨'
                 src={GuitarPicture}
                 alt='Foto de homem com guitarra'
+                variant="reverse"
             />
             <CourseItem
                 title='Guitarra'
-                description='Desperte seu som único! Nosso curso de guitarra é a chave para desbloquear seu potencial musical. 🎸✨'
+                description='Liberte o som que só você pode criar e descubra todo o poder da sua música! Nosso curso de guitarra é a porta de entrada para desbloquear o seu verdadeiro potencial musical e brilhar como nunca. 🎸✨'
                 src={EGuitarPicture}
                 alt='Foto de homem com guitarra'
             />
             <CourseItem
                 title='Bateria'
-                description='Desperte seu groove no curso de bateria! Transforme batidas em vibes e faça sua música marcar presença. 🥁✨ #BateriaManda #VemComAGente'
+                description='Desperte todo o seu ritmo com o nosso curso de bateria! Transforme simples batidas em grooves cheios de energia e faça sua música vibrar, marcando presença por onde passar. 🥁✨ #BateriaManda #VemComAGente'
                 src={DrumsPicture}
                 alt='Foto de homem com guitarra'
+                variant="reverse"
             />
             <CourseItem
                 title='Contrabaixo'
-                description='Vem com a gente desbravar o universo do contrabaixo! Se joga nesse som e faça parte da crew do groove. 🎸🔥 #CursoDeContrabaixo'
+                description='Junte-se a nós para explorar o incrível universo do contrabaixo! Deixe-se levar por esse som poderoso e torne-se parte da equipe que dá vida ao groove com estilo e atitude.🎸🔥 #CursoDeContrabaixo'
                 src={BassPicture}
                 alt='Foto de homem com guitarra'
             />
