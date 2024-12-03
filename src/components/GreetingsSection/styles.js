@@ -4,7 +4,7 @@ import backgroundDesktopImage from "../../assets/images/bg-desktop.svg"
 
 export const Container = styled.section`
 
-    min-height: calc(100vh - 88.38px);
+    min-height: calc(100vh - 129.39px);
     background: url(${backgroundMobileImage}) top center no-repeat ;
     background-size: 350px;
     
