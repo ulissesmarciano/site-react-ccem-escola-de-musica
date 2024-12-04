@@ -23,6 +23,18 @@ export const Container = styled.section`
         color: #350030;
     }
 
+    .teachers-section {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: .8rem;
+    }
+
+    @media (min-width: 375px){
+        .teachers-section {
+            grid-template-columns: 1fr 1fr;
+        }
+    }
+
     @media (min-width: 601px){
         
         margin: auto;
@@ -37,5 +49,17 @@ export const Container = styled.section`
             font-size: 3.5rem;
         }
 
+    }
+
+    @media(min-width: 768px){
+        .teachers-section {
+            grid-template-columns: 1fr 1fr 1fr;
+        }
+    }
+
+    @media(min-width: 1024px) {
+        .teachers-section {
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+        }
     }
 `

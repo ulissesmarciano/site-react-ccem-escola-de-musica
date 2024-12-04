@@ -9,10 +9,12 @@ const TeamSection = () => {
                 <p className='section-title' id='cursos'>Conheça</p>
                 <h2>Nosso Time</h2>
             </div>
-            <TeamProfessionalItem />
-            <TeamProfessionalItem />
-            <TeamProfessionalItem />
-            <TeamProfessionalItem />
+            <div class="teachers-section">                
+                <TeamProfessionalItem />
+                <TeamProfessionalItem />
+                <TeamProfessionalItem />
+                <TeamProfessionalItem />
+            </div>
         </Container>
     );
 };
