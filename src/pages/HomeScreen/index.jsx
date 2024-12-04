@@ -5,6 +5,7 @@ import GreetingsSection from '../../components/GreetingsSection';
 import CoursesSection from '../../components/CoursesSection';
 import Footer from '../../components/Footer';
 import ContactHeader from '../../components/ContactHeader';
+import TeamSection from '../../components/TeamSection';
 
 function HomeScreen() {
   return (<>
@@ -13,6 +14,7 @@ function HomeScreen() {
     <main>
       <GreetingsSection />
       <CoursesSection />
+      <TeamSection />
       <Footer />
     </main>
   </>);
