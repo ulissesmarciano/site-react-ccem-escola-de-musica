@@ -1,13 +1,11 @@
 import React from 'react';
 import { Container } from './styles';
 
-import Avatar from '../../assets/images/professionals/davi-guilherme.jpg'
-
-const TeamProfessionalItem = () => {
+const TeamProfessionalItem = ({avatar}) => {
   return (
     <Container>
         <div className="image-section">
-            <img src={Avatar} alt="Imagem do Professor" />
+            <img src={avatar} alt="Imagem do Professor" />
         </div>
         <div className="name-and-teach">
             <h3>Davi Guilherme</h3>
