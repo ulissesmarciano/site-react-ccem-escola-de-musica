@@ -17,15 +17,19 @@ const TeamSection = () => {
             <div class="teachers-section">                
                 <TeamProfessionalItem 
                     avatar={DaviAvatar}
+                    name="Davi Guilherme"
                 />
                 <TeamProfessionalItem 
                     avatar={GenesioAvatar}
+                    name="Genésio de Souza"
                 />
                 <TeamProfessionalItem
                     avatar={JuniorAvatar}
+                    name="Genéso Júnior"
                 />
                 <TeamProfessionalItem 
                     avatar={GabrielaAvatar}
+                    name="Gabriela Nogueira"
                 />
             </div>
         </Container>
