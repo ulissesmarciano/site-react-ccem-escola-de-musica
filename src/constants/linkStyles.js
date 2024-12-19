@@ -65,5 +65,19 @@ export const linkStyles = {
             background-color: #fff;
             color: #350030;
         }
+    `,
+
+    footerSocialLink: css`
+        img {
+            margin: 1rem;
+            height: 2rem;
+
+            transition: 0.3s;
+            
+            &:hover {
+                filter: drop-shadow(0 0 2px #fff);
+                transform: translateY(-.2rem);
+            }
+        }
     `
 }
