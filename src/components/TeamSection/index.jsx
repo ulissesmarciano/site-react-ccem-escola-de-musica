@@ -14,7 +14,7 @@ const TeamSection = () => {
                 <p className='section-title' id='cursos'>Conheça</p>
                 <h2>Nosso Time</h2>
             </div>
-            <div class="teachers-section">                
+            <div className="teachers-section">                
                 <TeamProfessionalItem 
                     avatar={DaviAvatar}
                     name="Davi Guilherme"
