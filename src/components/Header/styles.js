@@ -155,6 +155,10 @@ export const Container = styled.header`
         }
     }
 
-    
+    @media(min-width: 1024px) {
+        .header-container .logo {
+            font-size: 3.2rem;
+        }
+    }
 `;
 
