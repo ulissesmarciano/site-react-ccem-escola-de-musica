@@ -4,13 +4,20 @@ import backgroundDesktopImage from "../../assets/images/bg-desktop.svg"
 
 export const Container = styled.section`
 
-    min-height: calc(100vh - 129.39px);
     background: url(${backgroundMobileImage}) top center no-repeat ;
     background-size: 350px;
+
+    .greetings-container {
+        min-height: calc(100vh - 129.39px);
+
+        display: flex;
+        flex-direction: column;
+    }
     
     .greetings-container .image-container {
-        padding: 4rem 0;
+        //padding: 3rem 0;
         display: flex;
+        flex: 1;
         align-items: center;
         justify-content: center;
     }
@@ -24,6 +31,7 @@ export const Container = styled.section`
         gap: 1.2rem;
 
         display: flex;
+        flex: 1;
         flex-direction: column;
         align-items: center;
     }
@@ -40,9 +48,8 @@ export const Container = styled.section`
 
     @media(min-width: 480px){
         background-size: 500px;
-
-        .greetings-container .image-container {
-            padding: 6rem 0;
+        .greetings-container {
+            min-height: calc(100vh - 128.77px);
         }
 
         .greetings-container .info-container {
@@ -60,18 +67,19 @@ export const Container = styled.section`
     }
 
     @media(min-width: 820px){
-        background-size: 550px;
 
         .greetings-container {
-            height: calc(100vh - 72.38px);
+            height: calc(100vh - 15038px);
         }
         
         .greetings-container .image-container img {
             height: 22rem;
+            margin-top: 3rem;
         }
 
         .greetings-container .info-container {
-            padding-top: 1rem;
+            margin-top: 4rem;
+            padding: 0 1rem;
             gap: 1rem;
         }
 
@@ -92,7 +100,6 @@ export const Container = styled.section`
         align-items: center;
         .greetings-container {
             padding: 0 3.8rem;
-
             display: flex;
             flex-direction: row-reverse;
             justify-content: space-between;
@@ -108,9 +115,11 @@ export const Container = styled.section`
 
         .greetings-container .image-container img {
             height: 35rem;
+            margin: 0;
         }
 
         .greetings-container .info-container {
+            margin: 0;
             flex: 1;
             align-items: start;
             gap: 1rem;
