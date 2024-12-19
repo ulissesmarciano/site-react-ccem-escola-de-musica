@@ -1,8 +1,9 @@
 import React from 'react';
 import { ContactSection, Container, MenuSection, SocialSection } from './styles';
 import LinkItem from '../LinkItem'
-
 import ContactButton from '../ContactButton';
+import { contactLinks } from '../../constants/contactLinks';
+
 import FacebookIcon from '../../assets/facebookicon.svg';
 import InstagramIcon from '../../assets/instagramicon.svg';
 import WhattsappIcon from '../../assets/whatsappicon.svg';
@@ -36,19 +37,19 @@ function Footer({ id }) {
       <span />
       <SocialSection>
         <LinkItem 
-          href="https://www.instagram.com/ccemmusic/"
+          href={contactLinks.instagramHref}
           src={InstagramIcon}
           target="blank"
           variant="footerSocialLink"
         />
         <LinkItem 
-          href="https://www.facebook.com/ccescolademusica"
+          href={contactLinks.facebookHref}
           src={FacebookIcon}
           target="blank"
           variant="footerSocialLink"
         />
         <LinkItem 
-          href="https://api.whatsapp.com/send?phone=5519993807111&text=Ol%C3%A1.%20Quero%20conhecer%20a%20escola!"
+          href={contactLinks.whatsappHref}
           src={WhattsappIcon}
           target="blank"
           variant="footerSocialLink"
