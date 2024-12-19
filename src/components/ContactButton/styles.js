@@ -14,4 +14,19 @@ export const Container = styled.a`
     border: 2px solid #FFFFFF;
     border-radius: 4px;
     text-decoration: none;
+
+    transition: 0.3s;
+
+    &:hover {
+        background-color: #FFFFFF;
+        color: #350030;
+
+        transform: translateY(-.2rem);
+    }
+
+    &:active {
+        transform: scale(1);
+        background-color: transparent;
+        color: #FFFFFF;
+    }
 `
