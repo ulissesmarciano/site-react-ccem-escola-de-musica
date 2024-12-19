@@ -27,6 +27,12 @@ export const linkStyles = {
                 color: #b96646;
             }
         }
+
+        @media(min-width: 1024px) {
+            p {
+                font-size: 2rem;
+            }
+        }
     `,
 
     greetingButtonLink: css`
