@@ -14,7 +14,7 @@ export const Container = styled.footer`
   text-align: center;
 
   color: white;
-  background-color: #000;
+  background-color: #350030;
 
   @media (min-width: 769px){
 
