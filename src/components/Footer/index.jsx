@@ -1,10 +1,11 @@
-import React from 'react'
-import { ContactSection, Container, MenuSection, SocialSection } from './styles'
+import React from 'react';
+import { ContactSection, Container, MenuSection, SocialSection } from './styles';
+import LinkItem from '../LinkItem'
 
-import ContactButton from '../ContactButton'
-import FacebookIcon from '../../assets/facebookicon.svg'
-import InstagramIcon from '../../assets/instagramicon.svg'
-import WhattsappIcon from '../../assets/whatsappicon.svg'
+import ContactButton from '../ContactButton';
+import FacebookIcon from '../../assets/facebookicon.svg';
+import InstagramIcon from '../../assets/instagramicon.svg';
+import WhattsappIcon from '../../assets/whatsappicon.svg';
 
 
 function Footer({ id }) {
@@ -16,21 +17,42 @@ function Footer({ id }) {
       </ContactSection>
       <span />
       <MenuSection>
-        <a href={id = "#cursos"} >Cursos</a>
-        <a href={id = "#galeria"} >Galeria</a>
-        <a href={id = "#sobre"} >Sobre Nós</a>
+        <LinkItem
+          href={id = "#cursos"}
+          name="cursos"
+          variant="footerLink"
+        />
+        <LinkItem
+          href={id = "#galeria"}
+          name="galeria"
+          variant="footerLink"
+        />
+        <LinkItem
+          href={id = "#sobre"}
+          name="sobre"
+          variant="footerLink"
+        />
       </MenuSection>
       <span />
       <SocialSection>
-        <a href="https://www.instagram.com/ccemmusic/" target='blank'>
-          <img src={InstagramIcon} alt='icone do instagram' />
-        </a>
-        <a href='https://www.facebook.com/ccescolademusica' target='blank'>
-          <img src={FacebookIcon} alt='icone do facebook' />
-        </a>
-        <a href='https://api.whatsapp.com/send?phone=5519993807111&text=Ol%C3%A1.%20Quero%20conhecer%20a%20escola!' target='blank'>
-          <img src={WhattsappIcon} alt='icone do whatsapp' />
-        </a>
+        <LinkItem 
+          href="https://www.instagram.com/ccemmusic/"
+          src={InstagramIcon}
+          target="blank"
+          variant="footerSocialLink"
+        />
+        <LinkItem 
+          href="https://www.facebook.com/ccescolademusica"
+          src={FacebookIcon}
+          target="blank"
+          variant="footerSocialLink"
+        />
+        <LinkItem 
+          href="https://api.whatsapp.com/send?phone=5519993807111&text=Ol%C3%A1.%20Quero%20conhecer%20a%20escola!"
+          src={WhattsappIcon}
+          target="blank"
+          variant="footerSocialLink"
+        />
       </SocialSection>
     </Container>
   )
