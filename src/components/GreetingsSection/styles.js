@@ -1,8 +1,26 @@
-import styled from "styled-components";
+import styled, { keyframes } from "styled-components";
 import backgroundMobileImage from "../../assets/images/bg-mobile.svg"
 import backgroundDesktopImage from "../../assets/images/bg-desktop.svg"
 
+const slideUp = keyframes`
+  from {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+`;
+
 export const Container = styled.section`
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 1s ease-out;
+    
+    &.is-visible {
+        animation: ${slideUp} 1s forwards;
+    }
 
     background: url(${backgroundMobileImage}) top center no-repeat ;
     background-size: 350px;
