@@ -51,4 +51,19 @@ export const linkStyles = {
             }
         }
     `,
+
+    footerLink: css`
+        width: 91.45px;
+        display: flex;
+        color: #fff;
+        font-size: 1.4rem;
+        text-transform: capitalize;
+        padding: .6rem 1rem;
+        transition: 0.3s;
+
+        &:hover {
+            background-color: #fff;
+            color: #350030;
+        }
+    `
 }
