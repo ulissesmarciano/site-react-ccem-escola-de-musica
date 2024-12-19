@@ -37,7 +37,6 @@ export const ContactSection = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-
 `
 
 export const MenuSection = styled.div`
@@ -50,12 +49,7 @@ export const MenuSection = styled.div`
     display: flex;
     flex-direction: column;
     align-items: start;
-    justify-content: space-around;
-
-    a{
-      text-decoration: none;
-      color: #FFFFFF;
-    }
+    justify-content: space-around;    
   }
 `
 
@@ -64,19 +58,10 @@ export const SocialSection = styled.div`
   width: 100%;
   
   display: flex;
-  justify-content: center;
-
-
-  img {
-    margin: 1rem;
-    height: 2rem;
-
-    filter: invert();
-  }
+  justify-content: center; 
 
   @media (min-width: 769px){
     flex-direction: column;
     align-items: start;
   }
-
 `
