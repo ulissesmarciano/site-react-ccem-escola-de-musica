@@ -1,6 +1,26 @@
-import styled from "styled-components";
+import styled, { keyframes } from "styled-components";
+
+const slideUp = keyframes`
+    from {
+        transform: translateY(20px);
+        opacity: 0;
+    };
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    };
+`
 
 export const Container = styled.section`
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 1s ease-in-out;
+
+    &.is-visible {
+        animation: ${slideUp} 1s forwards; 
+    }
+
     margin: 4rem 0;
     padding: 0 1rem;
     
@@ -37,7 +57,7 @@ export const Container = styled.section`
 
     @media (min-width: 601px){
         
-        margin: auto;
+        margin: 4rem auto 8rem;
         padding: 1rem;
         max-width: 1440px;
 
