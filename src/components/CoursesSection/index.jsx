@@ -1,5 +1,6 @@
 import React from 'react';
 import { Container } from './styles';
+import { useInView } from 'react-intersection-observer';
 
 import CourseItem from '../CourseItem';
 
@@ -11,10 +12,17 @@ import VoxPicture from '../../assets/tecnicavocal.png';
 import PianoPicture from '../../assets/teclado.png';
 import MusicalPicture from '../../assets/teatromusical.png';
 
-
 const CoursesSection = () => {
+
+    const { ref, inView } = useInView({
+        triggerOnce: true,
+        threshold: 0.1,
+    });
     return (
-        <Container>
+        <Container
+            ref={ref}
+            className={inView ? 'is-visible' : ''}
+        >
             <div className='section-title'>
                 <p className='section-title' id='cursos'>Conheça</p>
                 <h2>Nossos Cursos</h2>
@@ -24,7 +32,7 @@ const CoursesSection = () => {
                 description='Junte-se a nós nessa jornada incrível para desvendar todos os mistérios escondidos na arte da voz! Descubra todo o potencial e a transformação que o nosso curso de técnica vocal pode trazer para você. 🎤✨'
                 src={VoxPicture}
                 alt='Foto de uma mulher cantando'
-                
+
             />
             <CourseItem
                 title='Teclado e Piano'
@@ -39,7 +47,7 @@ const CoursesSection = () => {
                 src={MusicalPicture}
                 alt='Foto de um grupo teatral saudando o publico'
                 hash="#VemPraCiaCCEM"
-                />
+            />
 
             <CourseItem
                 title='Violão'
