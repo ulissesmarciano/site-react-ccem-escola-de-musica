@@ -1,7 +1,48 @@
-import styled, { css } from "styled-components";
+import styled, { css, keyframes } from "styled-components";
 
-export const Container = styled.div`
-    margin: 0 0 5rem;
+const slideLeft = keyframes`
+    from {
+        transform: translateX(-40px);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+`;
+
+const slideRight = keyframes`
+    from {
+        transform: translateX(40px);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+`;
+
+const slideUp = keyframes`
+    from {
+        transform: translateY(40px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+`;
+
+export const Container = styled.div` 
+    opacity: 0;
+    transform: translateY(40px);
+    transition: all 1s ease-out;
+    margin: 0 0 5rem;    
+
+    &.is-visible {
+        animation: ${slideUp} 1s forwards;
+    }   
+
 
     .course-container {
         max-width: 1440px;
@@ -62,12 +103,19 @@ export const Container = styled.div`
     }
 
     @media (min-width: 769px){
+        opacity: 0;
+        transform: translateX(-30px);
+        transition: all 1s ease-out;
         margin: 0 0 8rem;
+
+        &.is-visible {
+            animation: ${({ $variant }) => $variant === "reverse" ? slideLeft : slideRight} 2s forwards;
+        }
         .course-container {
             display: flex;
             justify-content: space-between;
             ${({ $variant }) => $variant !== 'reverse' && css`
-                flex-direction: row-reverse;
+                flex-direction: row-reverse;                
             `}
         }
 
